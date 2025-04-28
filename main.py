@@ -4,13 +4,11 @@ import requests
 from bs4 import BeautifulSoup
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ChatMemberAdministrator, ChatPermissions
 from telegram.ext import (ApplicationBuilder, CommandHandler, MessageHandler,
-                          ContextTypes, filters, CallbackQueryHandler,
-                          Application)
-
-BOT_TOKEN = '8123532822:AAHxdTxh_lQWfhoFojfxJoP4IaRR8YS7aT8'
-OWNER_ID = 6143388752
+                          ContextTypes, filters, CallbackQueryHandler,Application)
+Token_bot = 
+OWNER_ID = 
 AUTO_SEND_ENABLED = True
-REGISTERED_CHATS = {"@DefendYourFaith"}
+REGISTERED_CHATS = {"@"}
 
 with open("shubuhat_part_1.txt", "r", encoding="utf-8") as f:
     RESPONSES = [r.strip() for r in f.read().split("🟥") if r.strip()]
